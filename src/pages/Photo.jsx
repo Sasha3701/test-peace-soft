@@ -1,5 +1,11 @@
+import Layout from "../layout";
+
 const Photo = () => {
-  return <div>Photo</div>;
+  return (
+    <Layout>
+      <div>Photo</div>
+    </Layout>
+  );
 };
 
 export default Photo;
