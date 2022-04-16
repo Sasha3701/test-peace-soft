@@ -1,0 +1,18 @@
+.about {
+    padding: 40px;
+}
+
+.about__title {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.about__description {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.about__link {
+    font-size: 14px;
+}

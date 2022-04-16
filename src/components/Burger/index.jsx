@@ -1,5 +1,5 @@
 import styles from "./styles/index.module.css";
-import { MenuIcon } from "../../images";
+import { MenuIcon, AvatarIcon } from "../../images";
 import { CloseButton, Button } from "react-bootstrap";
 import { useState } from "react";
 import { PATHS } from "../../const";
@@ -39,12 +39,21 @@ const Burger = () => {
           [styles.burger__menu_status_open]: open,
         })}
       >
-        <nav className={styles.burger__nav}>
+        <nav className={styles.menu}>
+          <div className={styles.menu__info}>
+            <div className={styles.menu__avatar}>
+              <AvatarIcon />
+            </div>
+            <p className={styles.menu__name}>Александр Ирхин</p>
+            <a className={styles.menu__mail} href="mailto:workirhin@yandex.ru">
+              workirhin@yandex.ru
+            </a>
+          </div>
           {links.map(({ id, text, path }) => (
             <Link
               key={id}
-              className={classNames(styles.burger__link, {
-                [styles.burger__link_visited]: pathname === path,
+              className={classNames(styles.menu__link, {
+                [styles.menu__link_visited]: pathname === path,
               })}
               to={path}
             >

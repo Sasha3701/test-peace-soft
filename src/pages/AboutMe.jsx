@@ -1,9 +1,10 @@
 import Layout from "../layout";
+import { AboutMeComponent } from "../components";
 
 const AboutMe = () => {
   return (
     <Layout>
-      <div>AboutMe</div>
+      <AboutMeComponent />
     </Layout>
   );
 };
