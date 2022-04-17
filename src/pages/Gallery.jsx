@@ -1,9 +1,10 @@
+import { GalleryComponent } from "../components";
 import Layout from "../layout";
 
 const Gallery = () => {
   return (
     <Layout>
-      <div>Gallery</div>
+      <GalleryComponent />
     </Layout>
   );
 };

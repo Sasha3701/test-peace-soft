@@ -1,9 +1,10 @@
+import { PhotoComponent } from "../components";
 import Layout from "../layout";
 
 const Photo = () => {
   return (
     <Layout>
-      <div>Photo</div>
+      <PhotoComponent />
     </Layout>
   );
 };

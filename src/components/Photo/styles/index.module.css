@@ -1,0 +1,7 @@
+.photo {
+    position: relative;
+}
+
+.photo__img {
+    border-radius: 6px;
+}
