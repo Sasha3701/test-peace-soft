@@ -1,4 +1,4 @@
-import { createAction, createReducer, createSelector } from "@reduxjs/toolkit";
+import { createAction, createReducer } from "@reduxjs/toolkit";
 import { createRoutine } from "redux-saga-routines";
 
 const initialState = {

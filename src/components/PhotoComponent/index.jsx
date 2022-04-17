@@ -16,6 +16,7 @@ const PhotoComponent = () => {
     if (!photo) {
       dispatch(fetchPhoto(id));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return loading ? (
