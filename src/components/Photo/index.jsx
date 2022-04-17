@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { updatePhoto } from "../../store/photos";
 import styles from "./styles/index.module.css";
 
-const Photo = ({ url, id }) => {
+const Photo = (photo) => {
   const history = useHistory();
+  const dispatch = useDispatch();
   const [visible, setVisible] = useState(false);
 
   const handleMouseOver = () => {
@@ -16,7 +19,8 @@ const Photo = ({ url, id }) => {
   };
 
   const handleClick = () => {
-    history.push(`/photo/${id}`);
+    dispatch(updatePhoto(photo));
+    history.push(`/photo/${photo.id}`);
   };
 
   return (
@@ -34,8 +38,8 @@ const Photo = ({ url, id }) => {
         width={200}
         height={200}
         className={styles.photo__img}
-        src={url}
-        alt={`photos-${id}`}
+        src={photo.url}
+        alt={`photos-${photo.id}`}
       />
     </div>
   );

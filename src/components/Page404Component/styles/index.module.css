@@ -1,0 +1,9 @@
+.page404 {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.page404__description {
+    margin: 0 0 10px;
+}
